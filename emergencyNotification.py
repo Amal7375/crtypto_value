@@ -17,7 +17,10 @@ def emergencyNotification(currency,rate):
 
     url='https://api.telegram.org/bot5127863428:AAG8wG2I518sP1h1diYnRbHn3TI_HOjk2mc/sendMessage?chat_id=1345837213&text={} High Value Reached...\n{} : {}'.format(currency,currency,rate)
     requests.get(url)
-
+    url2='https://api.telegram.org/bot5127863428:AAG8wG2I518sP1h1diYnRbHn3TI_HOjk2mc/sendMessage?chat_id=2056528819&text={} High Value Reached...\n{} : {}'.format(currency,currency,rate)
+    requests.get(url2)
 def lowRateEmergencyNotification(currency,rate):
     url = 'https://api.telegram.org/bot5127863428:AAG8wG2I518sP1h1diYnRbHn3TI_HOjk2mc/sendMessage?chat_id=1345837213&text={} Low Value Reached...\n{} : {}'.format(currency, currency, rate)
     requests.get(url)
+    url2 = 'https://api.telegram.org/bot5127863428:AAG8wG2I518sP1h1diYnRbHn3TI_HOjk2mc/sendMessage?chat_id=2056528819&text={} Low Value Reached...\n{} : {}'.format(currency, currency, rate)
+    requests.get(url2)
